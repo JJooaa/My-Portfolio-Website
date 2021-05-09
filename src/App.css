@@ -1,38 +1,174 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Oxanium&display=swap');
+
+p {
+  margin: 0;
+  color: black;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+h1 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 3.5rem;
+  color: black;
+  font-family: "Oxanium"
+}
+
+h2 {
+  margin: 0;
+  color: rgb(26, 24, 24);
+  font-size: 30px;
+  font-weight: 500;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.hero-container {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* ABOUTME SECTION  */
+.aboutme {
+  width: 100%;
+  height: 40vh;
+  background-color: rgba(128, 128, 128, 0.800);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 400px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.aboutme-container {
+  max-width: 800px;
+  min-height: 500px;
+  background-color: whitesmoke;
+  padding: 50px;
+  position: absolute;
+  left: 15%;
+  box-shadow: 0 10px 6px -6px #777;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.aboutme-p {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.aboutme-content {
+  padding-top: 50px;
+  margin: 0 auto;
+  width: auto;
+}
+
+/* SKILLS SECTION  */
+.skills {
+  height: 40vh;
+  width: 100%;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-container {
+  height: auto;
+  max-width: 1000px;
+  background: whitesmoke;
+  padding: 50px;
+  box-shadow: 0 10px 6px -6px #777;
+}
+
+.skill-item {
+  max-width: 400px;
+  min-height: 400px;
+  background-color: gainsboro;
+  margin: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+
+.skills-flex {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.item-img {
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.item-p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.item-name {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+/* PROJECTS SECTION */
+
+.projects {
+  width: 100%;
+  height: 100vh;
+  background-color: grey;
+  margin-top: 500px;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px 50px 0px;
+  display: grid;
+}
+
+.project {
+  width: 50%;
+  height: 500px;
+  background-color: gainsboro;
+  display: grid;
+}
+
+
+
+/* GLOBAL MEDIA QUERYS */ 
+
+@media only screen and (max-width: 1024px) {
+  .aboutme {
+    margin-bottom: 150px;
   }
-  to {
-    transform: rotate(360deg);
+  .aboutme-container {
+    position: unset;
+  }
+  .skills {
+    display: block;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .aboutme {
+    margin-bottom: 300px;
+  }
+  .aboutme-container {
+    padding: 5px;
   }
 }
