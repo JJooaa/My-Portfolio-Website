@@ -1,174 +1,250 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxanium&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oxanium&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400&display=swap");
+
+.App {
+    background: linear-gradient(
+        90deg,
+        rgba(210, 210, 210, 1) 0%,
+        rgba(240, 240, 240, 1) 50%,
+        rgba(210, 210, 210, 1) 100%
+    );
+}
 
 p {
-  margin: 0;
-  color: black;
-  font-weight: 300;
-  font-size: 25px;
+    margin: 0;
+    color: rgb(112, 112, 112);
+    font-size: 25px;
+    font-family: "Arial", "Helvetica", "sans-serif";
 }
 
 h1 {
-  margin: 0;
-  font-weight: 400;
-  font-size: 3.5rem;
-  color: black;
-  font-family: "Oxanium"
+    margin: 0;
+    font-weight: 500;
+    font-size: 4rem;
+    font-family: "Oxanium", Arial, Helvetica, sans-serif;
+    color: rgb(85, 85, 85);
 }
 
 h2 {
-  margin: 0;
-  color: rgb(26, 24, 24);
-  font-size: 30px;
-  font-weight: 500;
+    margin: 0;
+    color: rgb(26, 24, 24);
+    font-size: 30px;
+    font-weight: 500;
 }
 
 div {
-  box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.more-header {
+  font-size: 20px;
+  color: rgb(95, 95, 95);
+  text-align: center;
+  padding-top: 10px;
+  font-family: "Oxanium";
+}
+
+.loader {
+    animation-name: writeText;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    width: 0px;
+    margin: 0px;
+    overflow: hidden;
+    display: block;
+    white-space: nowrap;
+    text-align: left;
+}
+
+@keyframes writeText {
+  0% {
+      width: 0px;
+  }
+  100% {
+      width: 350px;
+  }
+}
+.delay0 {
+  animation-delay: 500ms;
+}
+.delay1 {
+  animation-delay: 1500ms;
+}
+
+.delay2 {
+  animation-delay: 2500ms;
 }
 
 .hero-container {
-  height: 70vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
-
+.hero-content {
+  width: 700px;
+}
 /* ABOUTME SECTION  */
-.aboutme {
-  width: 100%;
-  height: 40vh;
-  background-color: rgba(128, 128, 128, 0.800);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  margin-bottom: 400px;
+.flexboy {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    border-top: 1px solid gainsboro;
+    padding-top: 20px;
 }
 
 .aboutme-container {
-  max-width: 800px;
-  min-height: 500px;
-  background-color: whitesmoke;
-  padding: 50px;
-  position: absolute;
-  left: 15%;
-  box-shadow: 0 10px 6px -6px #777;
+    max-width: 700px;
+    min-height: 400px;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(70, 71, 78, 0.4);
+    backdrop-filter: blur(11px);
+    -webkit-backdrop-filter: blur(11px);
+    border-radius: 5px;
+    margin: 50px 0px 50px 0px;
 }
 
+
+.fade-in {
+    transition: opacity 1s ease-in;
+}
+
+.fade-in-2 {
+    transition: opacity 1.0s ease-in;
+    transition-delay: 1000ms;
+}
+ .fade-in-3 {
+     margin-top: 50px;
+     transition: opacity 1s ease-in;
+ }
+
+
 .aboutme-p {
-  font-size: 20px;
-  font-weight: 400;
-  letter-spacing: 1px;
+    font-size: 18px;
+    color: black;
+    font-family: "Titillium Web", Arial, Helvetica, sans-serif;
 }
 
 .aboutme-content {
-  padding-top: 50px;
-  margin: 0 auto;
-  width: auto;
+    width: auto;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
 }
 
-/* SKILLS SECTION  */
-.skills {
-  height: 40vh;
-  width: 100%;
-  background-color: grey;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.moreskills {
+    max-width: 500px;
+    height: auto;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 8px 32px 0 rgba(70, 71, 78, 0.4);
+    backdrop-filter: blur(11px);
+    -webkit-backdrop-filter: blur(11px);
+    border-radius: 5px;
+    margin: 10px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
 }
+
+.moretech-p {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: "Titillium Web", Arial, Helvetica, sans-serif;
+}
+/* SKILLS SECTION  */
 
 .skills-container {
-  height: auto;
-  max-width: 1000px;
-  background: whitesmoke;
-  padding: 50px;
-  box-shadow: 0 10px 6px -6px #777;
+    height: auto;
+    max-width: 850px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(70, 71, 78, 0.37);
+    backdrop-filter: blur(11px);
+    -webkit-backdrop-filter: blur(11px);
+    border-radius: 5px;
 }
 
 .skill-item {
-  max-width: 400px;
-  min-height: 400px;
-  background-color: gainsboro;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 30px;
+    max-width: 350px;
+    min-height: 350px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.15s ease-in-out 0s,
+        background-color 0.15s ease-in-out 0s;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.65);
+    box-shadow: 0 8px 20px 0 rgba(70, 71, 78, 0.37);
+    backdrop-filter: blur(11px);
+    -webkit-backdrop-filter: blur(11px);
+    border-radius: 10px;
 }
 
+.skill-item:hover {
+    transform: translateY(-5px);
+    background-color: white;
+}
 .skills-flex {
-  display: flex;
-  flex-wrap: wrap;
-  height: 100%;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .item-img {
-  height: 50px;
-  width: 50px;
-  background-color: black;
-  margin-bottom: 10px;
+    height: 50px;
+    width: 50px;
+    margin-bottom: 10px;
 }
 
 .item-p {
-  font-size: 20px;
-  font-weight: 400;
+    font-size: 18px;
+    color: black;
+    font-family: "Titillium Web", Arial, Helvetica, sans-serif;
 }
 
 .item-name {
-  margin-bottom: 20px;
-  font-weight: 500;
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: black;
 }
 
 /* PROJECTS SECTION */
-
+.projects-header {
+    text-align: center;
+    margin-top: 100px;
+}
 .projects {
-  width: 100%;
-  height: 100vh;
-  background-color: grey;
-  margin-top: 500px;
-  display: flex;
-  justify-content: center;
-  padding: 50px 0px 50px 0px;
-  display: grid;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px 50px 0px;
 }
 
 .project {
-  width: 50%;
-  height: 500px;
-  background-color: gainsboro;
-  display: grid;
+    width: 50%;
+    height: 500px;
+    background-color: gainsboro;
 }
 
-
-
-/* GLOBAL MEDIA QUERYS */ 
-
-@media only screen and (max-width: 1024px) {
-  .aboutme {
-    margin-bottom: 150px;
-  }
-  .aboutme-container {
-    position: unset;
-  }
-  .skills {
-    display: block;
-    height: auto;
-  }
-}
-
-@media only screen and (max-width: 470px) {
-  .aboutme {
-    margin-bottom: 300px;
-  }
-  .aboutme-container {
-    padding: 5px;
-  }
-}
+/* GLOBAL MEDIA QUERYS */
