@@ -4,6 +4,7 @@ import reactimg from "./images/react-50.png";
 import jsimg from "./images/javascript-50.png";
 import htmlimg from "./images/html-50.png";
 import cssimg from "./images/css-50.png";
+import ajanvarausimg from "./images/ajanvaraus.png";
 import { useInView } from "react-intersection-observer";
 
 const App = () => {
@@ -28,9 +29,7 @@ const App = () => {
                 <div className="hero-content">
                     <h1 className="loader delay0">Joa Leitola</h1>
                     <p className="loader delay1">Front End Web Developer.</p>
-                    <p className="loader delay2">
-                        Currently on React.
-                    </p>
+                    <p className="loader delay2">Currently on React.</p>
                 </div>
             </div>
 
@@ -117,26 +116,50 @@ const App = () => {
                 </div>
             </section>
             <div
-                    ref={otherTech}
-                    style={{ opacity: inView3 ? 1 : 0 }}
-                    className="fade-in-3"
-                >
-                    <p className="more-header">Other Noteworthy Technologies & Working Environments</p>
-                    <div className="moreskills fade-in">
-                        <div>
-                            <p className="moretech-p">- Git</p>
-                            <p className="moretech-p">- Node.js</p>
-                            <p className="moretech-p">- Express.js</p>
-                            <p className="moretech-p">- MongoDB</p>
-                            <p className="moretech-p">- AdobeXD</p>
-                            <p className="moretech-p">- Scrum</p>
-                        </div>
+                ref={otherTech}
+                style={{ opacity: inView3 ? 1 : 0 }}
+                className="fade-in-3"
+            >
+                <p className="more-header">
+                    Other Noteworthy Technologies & Working Environments
+                </p>
+                <div className="moreskills fade-in">
+                    <div>
+                        <p className="moretech-p">- Git</p>
+                        <p className="moretech-p">- Node.js</p>
+                        <p className="moretech-p">- Express.js</p>
+                        <p className="moretech-p">- MongoDB</p>
+                        <p className="moretech-p">- AdobeXD</p>
+                        <p className="moretech-p">- Scrum</p>
                     </div>
                 </div>
+            </div>
             <br />
             <h1 className="projects-header">Projects</h1>
             <section className="projects">
-                <div className="project"></div>
+                <div className="project1">
+                    <div className="project1-content">
+                        <p className="project1-p">
+                            Project <span>Digitalents Ajanvaraus</span> for
+                            making reservations. 
+                        </p>
+                        <p className="project1-subtext">
+                            Application that flows you through steps
+                            for making a reservation. Choosing the person you want to meet, and then the appropriate time.<br/> Mobile friendly. Simple. Easy.
+                        </p>
+                        <p className="project1-subtext smaller">Created with: React</p>
+                        <div className="project-links">
+                            <a href="https://github.com/JJooaa/digitalents-ajanvaraus">
+                                GitHub
+                            </a>
+                            <a href="https://www.w3schools.com/tags/tag_a.asp">
+                                Website
+                            </a>
+                        </div>
+                    </div>
+                    <div className="project1-img">
+                    </div>
+                </div>
             </section>
         </div>
     );

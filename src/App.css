@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxanium&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap");
 
 .App {
     background: linear-gradient(
@@ -102,9 +102,8 @@ div {
 
 .aboutme-container {
     max-width: 700px;
-    min-height: 400px;
-    padding: 50px;
-    background: rgba(255, 255, 255, 0.5);
+    padding: 25px;
+        background: rgba(255, 255, 255, 0.5);
     box-shadow: 0 8px 32px 0 rgba(70, 71, 78, 0.4);
     backdrop-filter: blur(11px);
     -webkit-backdrop-filter: blur(11px);
@@ -135,12 +134,13 @@ div {
 
 .aboutme-content {
     width: auto;
-    min-height: 300px;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 0px;
+    justify-content: center;
 }
 
 .moreskills {
@@ -170,10 +170,6 @@ div {
     height: auto;
     max-width: 850px;
     padding: 25px;
-    background: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 8px 32px 0 rgba(70, 71, 78, 0.37);
-    backdrop-filter: blur(11px);
-    -webkit-backdrop-filter: blur(11px);
     border-radius: 5px;
 }
 
@@ -227,6 +223,9 @@ div {
     color: black;
 }
 
+
+
+
 /* PROJECTS SECTION */
 .projects-header {
     text-align: center;
@@ -234,17 +233,88 @@ div {
 }
 .projects {
     width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.8);
+    height: 50vh;
     display: flex;
     justify-content: center;
     padding: 50px 0px 50px 0px;
 }
 
-.project {
-    width: 50%;
-    height: 500px;
-    background-color: gainsboro;
+.project1 {
+    max-width: 1000px;
+    height: 400px;
+    background: whitesmoke;
+    box-shadow: 0 8px 20px 0 rgba(70, 71, 78, 100);
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 7px;
 }
 
+.project1-content {
+    display: flex;
+    padding: 35px;
+    width: 500px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.project1-img {
+    width: 500px;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0px 7px 7px 0px;
+}
+
+.project1-p {
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 30px;
+    margin: 0;
+    font-family: "Oxanium";
+    line-height: 30px;
+}
+
+span {
+    color: black;
+    text-decoration: underline;
+}
+
+.project1-subtext {
+    font-size: 18px;
+    font-family: "Titillium Web", Arial, Helvetica, sans-serif;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.smaller {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Titillium Web";
+}
+
+.project-links {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    padding: 0px 20px 0px 20px;
+}
+
+.project1-img {
+    background-image:url("./images/ajanvaraus.png");
+    background-position: -700px -235px;
+    background-clip: border-box;
+    background-size: fill;
+    position: relative;
+}
+
+.project1-img::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.20);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
 /* GLOBAL MEDIA QUERYS */
