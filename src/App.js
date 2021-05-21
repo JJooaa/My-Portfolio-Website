@@ -5,6 +5,7 @@ import jsimg from "./images/javascript-50.png";
 import htmlimg from "./images/html-50.png";
 import cssimg from "./images/css-50.png";
 import ajanvarausimg from "./images/ajanvaraus.png";
+import windowsishimg from "./images/windowsish.png";
 import { useInView } from "react-intersection-observer";
 
 const App = () => {
@@ -137,17 +138,18 @@ const App = () => {
             <br />
             <h1 className="projects-header">Projects</h1>
             <section className="projects">
-                <div className="project1">
-                    <div className="project1-content">
-                        <p className="project1-p">
+                
+                <div className="project">
+                    <div className="project-content">
+                        <p className="project-p">
                             Project <span>Digitalents Ajanvaraus</span> for
                             making reservations. 
                         </p>
-                        <p className="project1-subtext">
+                        <p className="project-subtext">
                             Application that flows you through steps
                             for making a reservation. Choosing the person you want to meet, and then the appropriate time.<br/> Mobile friendly. Simple. Easy.
                         </p>
-                        <p className="project1-subtext smaller">Created with: React</p>
+                        <p className="project-subtext smaller">Created with: React</p>
                         <div className="project-links">
                             <a href="https://github.com/JJooaa/digitalents-ajanvaraus">
                                 GitHub
@@ -157,9 +159,32 @@ const App = () => {
                             </a>
                         </div>
                     </div>
-                    <div className="project1-img">
+                    <div className="project1-image">
                     </div>
                 </div>
+                
+                <div className="project reverse">
+                    <div className="project-content">
+                        <p className="project-p">
+                            Project <span>Windows-Ish Exercise Tracker</span> for fun.
+                        </p>
+                        <p className="project-subtext">
+                            Application that mocks the windows desktop. You can open folders, terminal and includes an exercise tracker connected to a backend.<br/> Not mobile friendly. Simple.
+                        </p>
+                        <p className="project-subtext smaller">Created with: React</p>
+                        <div className="project-links">
+                            <a href="https://github.com/JJooaa/digitalents-ajanvaraus">
+                                GitHub
+                            </a>
+                            <a href="https://www.w3schools.com/tags/tag_a.asp">
+                                Website
+                            </a>
+                        </div>
+                    </div>
+                    <div className="project2-image">
+                    </div>
+                </div>
+
             </section>
         </div>
     );
