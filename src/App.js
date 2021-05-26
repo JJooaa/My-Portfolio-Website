@@ -7,6 +7,9 @@ import cssimg from "./images/css-50.png";
 import ajanvarausimg from "./images/ajanvaraus.png";
 import windowsishimg from "./images/windowsish.png";
 import { useInView } from "react-intersection-observer";
+import github from "./images/Github.png";
+import linkedin from "./images/linkedin.png";
+import cv from "./images/cv.png";
 
 const App = () => {
     // ABOUT ME CONTAINER
@@ -18,7 +21,7 @@ const App = () => {
     // SKILLS CONTAINER
     const [skills, inView2] = useInView({
         triggerOnce: true,
-        rootMargin: "-250px 0px",
+        rootMargin: "-345px 0px",
     });
 
     // OTHER TECH CONTAINER
@@ -83,11 +86,11 @@ const App = () => {
             >
                 <div className="holder">
                     <div className="aboutmeheader">
-                        <p className="ap">You can find me on:</p>
+                        <p className="ap">You can find me on</p>
                         <div className="socials">
-                            <p className="sp">Github</p>
-                            <p className="sp">LinkedIn</p>
-                            <p className="sp">CV</p>
+                            <div className="scont"><img className="smallimg" src={github}/><p className="sp">Github</p></div>
+                            <div className="scont"><img className="smallimg" src={linkedin}/><p className="sp">LinkedIn</p></div>
+                            <div className="scont"><img className="smallimg" src={cv}/><p className="sp">Cv</p></div>
                         </div>
                         <p className="email">leitola.joa@gmail.com</p>
                     </div>
