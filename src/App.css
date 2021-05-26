@@ -4,17 +4,21 @@
 .App {
     background: linear-gradient(
         90deg,
-        rgba(210, 210, 210, 1) 0%,
+        rgba(210, 210, 210, 0.5) 0%,
         rgba(240, 240, 240, 1) 50%,
-        rgba(210, 210, 210, 1) 100%
+        rgba(210, 210, 210, 0.3) 100%
     );
 }
-
 p {
     margin: 0;
-    color: rgb(112, 112, 112);
+    color: rgba(0, 0, 0, 0.7);
     font-size: 25px;
     font-family: "Arial", "Helvetica", "sans-serif";
+}
+
+.hp {
+    font-family: "Titillium Web";
+    letter-spacing: 0.3px;
 }
 
 h1 {
@@ -22,12 +26,11 @@ h1 {
     font-weight: 500;
     font-size: 4rem;
     font-family: "Oxanium", Arial, Helvetica, sans-serif;
-    color: rgb(85, 85, 85);
+    color: rgba(0, 0, 0, 0.8);
 }
 
 h2 {
     margin: 0;
-    color: rgb(26, 24, 24);
     font-size: 30px;
     font-weight: 500;
 }
@@ -37,11 +40,11 @@ div {
 }
 
 .more-header {
-  font-size: 20px;
-  color: rgb(95, 95, 95);
-  text-align: center;
-  padding-top: 10px;
-  font-family: "Oxanium";
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding-top: 10px;
+    font-family: "Oxanium";
 }
 
 .loader {
@@ -57,26 +60,26 @@ div {
 }
 
 @keyframes writeText {
-  0% {
-      width: 0px;
-  }
-  100% {
-      width: 350px;
-  }
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 350px;
+    }
 }
 .delay0 {
-  animation-delay: 500ms;
+    animation-delay: 500ms;
 }
 .delay1 {
-  animation-delay: 1500ms;
+    animation-delay: 1500ms;
 }
 
 .delay2 {
-  animation-delay: 2500ms;
+    animation-delay: 2500ms;
 }
 
 .hero-container {
-    height: 70vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -86,48 +89,111 @@ div {
 }
 
 .hero-content {
-  width: 700px;
+    width: 700px;
 }
 /* ABOUTME SECTION  */
-.flexboy {
+.aboutmesection {
+    width: 100%;
+    height: auto;
+}
+
+.skillsflexboy {
     width: 100%;
     height: auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.holder {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    align-items: center;
-    border-top: 1px solid gainsboro;
     padding-top: 20px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.aboutmeheader {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.email {
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    margin-top: 2px;
+    font-family: "Titillium Web";
+}
+.ap {
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 20px;
+    margin-top: 30px;
+    font-family: "Titillium Web";
+    text-align: center;
+}
+
+.ah2 {
+    font-size: 34px;
+    font-family: "Oxanium";
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    border-top: 1px solid gainsboro;
+    padding-top: 30px;
+}
+
+.sp {
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 20px;
+    font-family: "Titillium Web";
+    cursor: pointer;
+}
+
+.sp:hover {
+    color: darkblue;
+}
+
+.socials {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5px;
+    background: rgba(255, 255, 255, 0.4);
 }
 
 .aboutme-container {
     max-width: 700px;
     padding: 25px;
-        background: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 8px 32px 0 rgba(70, 71, 78, 0.4);
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 20px 0 rgb(70 71 78 / 37%);
     backdrop-filter: blur(11px);
-    -webkit-backdrop-filter: blur(11px);
     border-radius: 5px;
     margin: 50px 0px 50px 0px;
 }
-
 
 .fade-in {
     transition: opacity 1s ease-in;
 }
 
-.fade-in-2 {
-    transition: opacity 1.0s ease-in;
-    transition-delay: 1000ms;
-}
- .fade-in-3 {
-     margin-top: 50px;
-     transition: opacity 1s ease-in;
- }
-
-
 .aboutme-p {
     font-size: 18px;
+    text-align: center;
     color: black;
     font-family: "Titillium Web", Arial, Helvetica, sans-serif;
 }
@@ -146,8 +212,8 @@ div {
 .moreskills {
     max-width: 500px;
     height: auto;
-    background: rgba(255, 255, 255, 0.7);
-    box-shadow: 0 8px 32px 0 rgba(70, 71, 78, 0.4);
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 20px 0 rgb(70 71 78 / 37%);
     backdrop-filter: blur(11px);
     -webkit-backdrop-filter: blur(11px);
     border-radius: 5px;
@@ -159,23 +225,31 @@ div {
     text-align: left;
 }
 
+.skills-header {
+    margin-top: 75px;
+    padding-top: 30px;
+    font-size: 34px;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    border-top: 1px solid gainsboro;
+}
 .moretech-p {
     font-size: 20px;
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.9);
     font-family: "Titillium Web", Arial, Helvetica, sans-serif;
 }
 /* SKILLS SECTION  */
 
 .skills-container {
     height: auto;
-    max-width: 850px;
+    max-width: 1500px;
     padding: 25px;
     border-radius: 5px;
 }
 
 .skill-item {
-    max-width: 350px;
-    min-height: 350px;
+    max-width: 325px;
+    min-height: 325px;
     margin: 10px;
     border-radius: 10px;
     display: flex;
@@ -184,8 +258,8 @@ div {
     text-align: center;
     transition: transform 0.15s ease-in-out 0s,
         background-color 0.15s ease-in-out 0s;
-    padding: 30px;
-    background: rgba(255, 255, 255, 0.65);
+    padding: 20px 30px 20px 30px;
+    background: rgba(255, 255, 255, 0.5);
     box-shadow: 0 8px 20px 0 rgba(70, 71, 78, 0.37);
     backdrop-filter: blur(11px);
     -webkit-backdrop-filter: blur(11px);
@@ -223,13 +297,13 @@ div {
     color: black;
 }
 
-
-
-
 /* PROJECTS SECTION */
 .projects-header {
     text-align: center;
-    margin-top: 100px;
+    padding-top: 20px;
+    font-size: 34px;
+    color: rgba(0, 0, 0, 0.8);
+    border-top: 1px solid gainsboro;
 }
 .projects {
     width: 100%;
@@ -237,11 +311,15 @@ div {
     padding: 50px 0px 50px 0px;
 }
 
+.projects-holder {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
 .project {
     max-width: 1000px;
     min-height: 400px;
-    background: whitesmoke;
-    box-shadow: 0 8px 20px 0 rgba(70, 71, 78, 100);
     display: flex;
     flex-wrap: wrap;
     border-radius: 7px;
@@ -261,6 +339,7 @@ div {
     height: 400px;
     flex-direction: column;
     justify-content: space-evenly;
+    background: whitesmoke;
 }
 
 .project-p {
@@ -306,8 +385,7 @@ a {
     width: 500px;
     height: 400px;
     overflow: hidden;
-    border-radius: 0px 7px 7px 0px;
-    background-image:url("./images/ajanvaraus.png");
+    background-image: url("./images/ajanvaraus.png");
     background-position: -700px -235px;
     background-clip: border-box;
     background-size: fill;
@@ -316,7 +394,7 @@ a {
 
 .project1-image::before {
     content: "";
-    background-color: rgba(0, 0, 0, 0.20);
+    background-color: rgba(0, 0, 0, 0.2);
     position: absolute;
     top: 0px;
     right: 0px;
@@ -328,15 +406,10 @@ a {
     width: 500px;
     height: 400px;
     overflow: hidden;
-    border-radius: 7px 0px 0px 7px;
     background-image: url("./images/windowsish (2).png");
     background-clip: border-box;
-    background-position: 0px -50px ;
+    background-position: 0px -50px;
     background-repeat: no-repeat;
 }
-
-
-
-
 
 /* GLOBAL MEDIA QUERYS */
