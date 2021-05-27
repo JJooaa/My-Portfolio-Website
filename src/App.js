@@ -88,9 +88,18 @@ const App = () => {
                     <div className="aboutmeheader">
                         <p className="ap">You can find me on</p>
                         <div className="socials">
-                            <div className="scont"><img className="smallimg" src={github}/><p className="sp">Github</p></div>
-                            <div className="scont"><img className="smallimg" src={linkedin}/><p className="sp">LinkedIn</p></div>
-                            <div className="scont"><img className="smallimg" src={cv}/><p className="sp">Cv</p></div>
+                            <div className="scont">
+                                <img className="smallimg" src={github} />
+                                <a className="sp" href="https://github.com/JJooaa" target="_blank">Github</a>
+                            </div>
+                            <div className="scont">
+                                <img className="smallimg" src={linkedin} />
+                                <a className="sp" href="https://www.linkedin.com/in/joa-leitola-478515212/" target="_blank">LinkedIn</a>
+                            </div>
+                            <div className="scont">
+                                <img className="smallimg" src={cv} />
+                                <p className="sp">Cv</p>
+                            </div>
                         </div>
                         <p className="email">leitola.joa@gmail.com</p>
                     </div>
