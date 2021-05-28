@@ -52,7 +52,7 @@ div {
 
 .loader {
     animation-name: writeText;
-    animation-duration: 1000ms;
+    animation-duration: 1250ms;
     animation-fill-mode: forwards;
     width: 0px;
     margin: 0px;
@@ -67,7 +67,7 @@ div {
         width: 0px;
     }
     100% {
-        width: 350px;
+        width: 400px;
     }
 }
 .delay0 {
@@ -148,7 +148,7 @@ div {
 }
 .email {
     font-size: 20px;
-    color: black;
+    color: rgba(0, 0, 0, 0.9);
     text-align: center;
     margin-top: 7px;
     font-family: "Titillium Web";
@@ -227,16 +227,18 @@ div {
 }
 
 .moreskills {
-    max-width: 500px;
+    max-width: 800px;
     height: auto;
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
     margin: 10px auto;
     padding: 20px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
     align-items: left;
     text-align: left;
+    justify-content: space-evenly;
 }
 
 .skills-header {
@@ -248,10 +250,12 @@ div {
     border-top: 1px solid gainsboro;
 }
 .moretech-p {
+    margin: 10px;
     font-size: 20px;
     color: rgba(0, 0, 0, 0.9);
     font-family: "Titillium Web", Arial, Helvetica, sans-serif;
 }
+
 /* SKILLS SECTION  */
 
 .skills-container {
@@ -365,6 +369,21 @@ div {
     line-height: 35px;
 }
 
+
+.project-a {
+    margin: 0px 20px 0px 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.project-a:hover {
+    color: grey;
+}
+
+
+
 span {
     color: black;
     text-decoration: underline;
@@ -379,6 +398,7 @@ span {
 }
 
 .smaller {
+    text-align: center;
     font-size: 18px;
     font-weight: 600;
     font-family: "Titillium Web";

@@ -90,11 +90,23 @@ const App = () => {
                         <div className="socials">
                             <div className="scont">
                                 <img className="smallimg" src={github} />
-                                <a className="sp" href="https://github.com/JJooaa" target="_blank">Github</a>
+                                <a
+                                    className="sp"
+                                    href="https://github.com/JJooaa"
+                                    target="_blank"
+                                >
+                                    Github
+                                </a>
                             </div>
                             <div className="scont">
                                 <img className="smallimg" src={linkedin} />
-                                <a className="sp" href="https://www.linkedin.com/in/joa-leitola-478515212/" target="_blank">LinkedIn</a>
+                                <a
+                                    className="sp"
+                                    href="https://www.linkedin.com/in/joa-leitola-478515212/"
+                                    target="_blank"
+                                >
+                                    LinkedIn
+                                </a>
                             </div>
                             <div className="scont">
                                 <img className="smallimg" src={cv} />
@@ -200,14 +212,13 @@ const App = () => {
                             Other Noteworthy Technologies & Working Environments
                         </p>
                         <div className="moreskills fade-in">
-                            <div>
-                                <p className="moretech-p">- Git</p>
-                                <p className="moretech-p">- Node.js</p>
-                                <p className="moretech-p">- Express.js</p>
-                                <p className="moretech-p">- MongoDB</p>
-                                <p className="moretech-p">- AdobeXD</p>
-                                <p className="moretech-p">- Scrum</p>
-                            </div>
+                            <p className="moretech-p">Git</p>
+                            <p className="moretech-p">Node.js</p>
+                            <p className="moretech-p">Express.js</p>
+                            <p className="moretech-p">MongoDB</p>
+                            <p className="moretech-p">AdobeXD</p>
+                            <p className="moretech-p">Scrum</p>
+                            <p className="moretech-p">Netlify</p>
                         </div>
                     </div>
                 </div>
@@ -241,13 +252,13 @@ const App = () => {
                                 <br /> Mobile friendly. Simple. Easy.
                             </p>
                             <p className="project-subtext smaller">
-                                Created with: React
+                                React, Backend Api Communication
                             </p>
                             <div className="project-links">
-                                <a href="https://github.com/JJooaa/digitalents-ajanvaraus">
-                                    GitHub
+                                <a className="project-a" target="_blank" href="https://github.com/JJooaa/digitalents-ajanvaraus">
+                                    Source Code
                                 </a>
-                                <a href="https://www.w3schools.com/tags/tag_a.asp">
+                                <a className="project-a" target="_blank" href="https://agitated-jepsen-62689e.netlify.app/">
                                     Website
                                 </a>
                             </div>
@@ -273,13 +284,14 @@ const App = () => {
                                 <br /> Not mobile friendly. Simple.
                             </p>
                             <p className="project-subtext smaller">
-                                Created with: React
+                                React, React-Query, Backend Api Communication, MongoDB,
+                                Express, Node.js
                             </p>
                             <div className="project-links">
-                                <a href="https://github.com/JJooaa/digitalents-ajanvaraus">
-                                    GitHub
+                                <a className="project-a" target="_blank" href="https://github.com/JJooaa/digitalents-ajanvaraus">
+                                    Source Code
                                 </a>
-                                <a href="https://www.w3schools.com/tags/tag_a.asp">
+                                <a className="project-a" target="_blank"href="https://www.w3schools.com/tags/tag_a.asp">
                                     Website
                                 </a>
                             </div>
