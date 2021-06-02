@@ -10,6 +10,7 @@ import { useInView } from "react-intersection-observer";
 import github from "./images/Github.png";
 import linkedin from "./images/linkedin.png";
 import cv from "./images/cv.png";
+import cvFile from "./CV/JoaCV.pdf";
 
 const App = () => {
     // ABOUT ME CONTAINER
@@ -110,7 +111,9 @@ const App = () => {
                             </div>
                             <div className="scont">
                                 <img className="smallimg" src={cv} />
-                                <p className="sp">Cv</p>
+                                <a className="sp" href={cvFile} target="_blank">
+                                    CV
+                                </a>
                             </div>
                         </div>
                         <p className="email">leitola.joa@gmail.com</p>
@@ -118,21 +121,18 @@ const App = () => {
                     <div className="aboutme-container">
                         <div className="aboutme-content">
                             <p className="aboutme-p">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat.
+                                Self taught Web Developer who is in love with
+                                React. In the last year I have taught myself how
+                                the web works. I have practiced my skills by
+                                doing research and creating projects.
                             </p>
                             <br />
                             <p className="aboutme-p">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat.
+                                My goal is to become really good at React so
+                                that I can create quality web experiences for
+                                everyone. Fast forward a few years I see myself{" "}
+                                <br /> as a professional Full Stack Web
+                                Developer.
                             </p>
                         </div>
                     </div>
@@ -160,44 +160,32 @@ const App = () => {
                                 <img className="item-img" src={reactimg} />
                                 <p className="item-name">React</p>
                                 <p className="item-p">
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.
-                                    Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco
+                                    I have a solid understanding of the main
+                                    and advanced concepts in React.
+                                    This knowledge allows me to learn new technologies and libraries with more ease helping me create more diverse websites.
+                                    
                                 </p>
                             </div>
                             <div className="skill-item">
                                 <img className="item-img" src={jsimg} />
                                 <p className="item-name">Javascript (ES6)</p>
                                 <p className="item-p">
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.
-                                    Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco
+                                    I know the syntax of JavaScript. Also ES6 allows me to write cleaner code. 
                                 </p>
                             </div>
                             <div className="skill-item">
                                 <img className="item-img" src={htmlimg} />
                                 <p className="item-name">HTML</p>
                                 <p className="item-p">
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.
-                                    Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco
+                                    Creating and structuring HTML is essential for writing good code. Thats why I put alot of thought into it. 
                                 </p>
                             </div>
                             <div className="skill-item">
                                 <img className="item-img" src={cssimg} />
                                 <p className="item-name">CSS</p>
                                 <p className="item-p">
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.
-                                    Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco
+                                    I feel comfortable with CSS to the point that it gives me the ability to form websites more efficiently.
+                                    Paying attention to page details and making it flow smoothly. 
                                 </p>
                             </div>
                         </div>
@@ -219,6 +207,8 @@ const App = () => {
                             <p className="moretech-p">AdobeXD</p>
                             <p className="moretech-p">Scrum</p>
                             <p className="moretech-p">Netlify</p>
+                            <p className="moretech-p">Heroku</p>
+                            <p className="moretech-p">React-Query</p>
                         </div>
                     </div>
                 </div>
@@ -252,13 +242,21 @@ const App = () => {
                                 <br /> Mobile friendly. Simple. Easy.
                             </p>
                             <p className="project-subtext smaller">
-                                React, Backend Api Communication
+                                React, Backend Api Communication, Netlify
                             </p>
                             <div className="project-links">
-                                <a className="project-a" target="_blank" href="https://github.com/JJooaa/digitalents-ajanvaraus">
+                                <a
+                                    className="project-a"
+                                    target="_blank"
+                                    href="https://github.com/JJooaa/digitalents-ajanvaraus"
+                                >
                                     Source Code
                                 </a>
-                                <a className="project-a" target="_blank" href="https://agitated-jepsen-62689e.netlify.app/">
+                                <a
+                                    className="project-a"
+                                    target="_blank"
+                                    href="https://agitated-jepsen-62689e.netlify.app/"
+                                >
                                     Website
                                 </a>
                             </div>
@@ -273,9 +271,8 @@ const App = () => {
                     >
                         <div className="project-content">
                             <p className="project-p">
-                                Project{" "}
-                                <span>Windows-Ish Exercise Tracker</span> for
-                                fun.
+                                Project <span>Full-Stack Exercise Tracker</span>{" "}
+                                for fun.
                             </p>
                             <p className="project-subtext">
                                 Application that mocks the windows desktop. You
@@ -284,14 +281,22 @@ const App = () => {
                                 <br /> Not mobile friendly. Simple.
                             </p>
                             <p className="project-subtext smaller">
-                                React, React-Query, Backend Api Communication, MongoDB,
-                                Express, Node.js
+                                React, React-Query, Backend Api Communication,
+                                MongoDB, Express, Node.js, Netlify, Heroku
                             </p>
                             <div className="project-links">
-                                <a className="project-a" target="_blank" href="https://github.com/JJooaa/digitalents-ajanvaraus">
+                                <a
+                                    className="project-a"
+                                    target="_blank"
+                                    href="https://github.com/JJooaa/digitalents-ajanvaraus"
+                                >
                                     Source Code
                                 </a>
-                                <a className="project-a" target="_blank"href="https://www.w3schools.com/tags/tag_a.asp">
+                                <a
+                                    className="project-a"
+                                    target="_blank"
+                                    href="https://www.w3schools.com/tags/tag_a.asp"
+                                >
                                     Website
                                 </a>
                             </div>

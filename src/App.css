@@ -194,6 +194,7 @@ div {
     flex-wrap: wrap;
 }
 
+
 .aboutme-container {
     max-width: 595px;
     padding: 25px;
@@ -212,7 +213,7 @@ div {
     color: black;
     font-family: "Titillium Web", Arial, Helvetica, sans-serif;
     border-bottom: 1px solid grey;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 
 .aboutme-content {
