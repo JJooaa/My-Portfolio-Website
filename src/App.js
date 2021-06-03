@@ -14,13 +14,13 @@ const App = () => {
     // ABOUT ME CONTAINER
     const [aboutme, inView1] = useInView({
         triggerOnce: true,
-        rootMargin: "-400px 0px",
+        rootMargin: "-350px 0px",
     });
 
     // SKILLS CONTAINER
     const [skills, inView2] = useInView({
         triggerOnce: true,
-        rootMargin: "-345px 0px",
+        rootMargin: "-300px 0px",
     });
 
     // OTHER TECH CONTAINER
@@ -50,7 +50,7 @@ const App = () => {
     // SKILLS SECTION TEXT
     const [skillshead, inView7] = useInView({
         triggerOnce: true,
-        rootMargin: "-200px 0px",
+        rootMargin: "-100px 0px",
     });
 
     const [aboutmeheader, inView10] = useInView({
@@ -63,7 +63,7 @@ const App = () => {
             {/* Hero */}
             <div className="hero-container">
                 <div className="hero-content">
-                    <h1 className="loader delay0">Joa Leitola</h1>
+                    <h1 className="loader delay0 bigh1">Joa Leitola</h1>
                     <p className="loader delay1 hp">Front End Web Developer.</p>
                     <p className="loader delay2 hp">Currently on React.</p>
                 </div>

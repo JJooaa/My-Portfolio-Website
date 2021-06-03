@@ -91,10 +91,11 @@ div {
     text-align: center;
 }
 
+.bigh1 {
+}
 .hero-content {
-    max-width: 50%;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 0px 10px 0px 10px;
 }
 /* ABOUTME SECTION  */
 .aboutmesection {
@@ -457,5 +458,19 @@ a {
     }
     .project2-image {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .loader {
+        width: 300px;
+    }
+    @keyframes writeText {
+        100% {
+            width: 300px;
+        }
+    }
+    .bigh1 {
+        font-size: 50px;
     }
 }
