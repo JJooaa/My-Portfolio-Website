@@ -177,7 +177,8 @@ const App = () => {
                                 <p className="item-name">Javascript (ES6)</p>
                                 <p className="item-p">
                                     I know the syntax of JavaScript. Also ES6
-                                    allows me to write cleaner code.
+                                    allows me to write cleaner code. I'm continuously improving 
+                                    my understanding of the language. 
                                 </p>
                             </div>
                             <div className="skill-item">
@@ -301,7 +302,7 @@ const App = () => {
                                 <a
                                     className="project-a"
                                     target="_blank"
-                                    href="https://github.com/JJooaa/digitalents-ajanvaraus"
+                                    href="https://github.com/JJooaa/Full-Stack-Interactive-Exercise-Tracker"
                                     rel="noreferrer"
                                 >
                                     Source Code
@@ -309,7 +310,7 @@ const App = () => {
                                 <a
                                     className="project-a"
                                     target="_blank"
-                                    href="https://www.w3schools.com/tags/tag_a.asp"
+                                    href="https://pedantic-kirch-2add65.netlify.app"
                                     rel="noreferrer"
                                 >
                                     Website
