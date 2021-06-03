@@ -1,16 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 import reactimg from "./images/react-50.png";
 import jsimg from "./images/javascript-50.png";
 import htmlimg from "./images/html-50.png";
 import cssimg from "./images/css-50.png";
-import ajanvarausimg from "./images/ajanvaraus.png";
-import windowsishimg from "./images/windowsish.png";
 import { useInView } from "react-intersection-observer";
 import github from "./images/Github.png";
 import linkedin from "./images/linkedin.png";
 import cv from "./images/cv.png";
-import cvFile from "./CV/JoaCV.pdf";
+import cvFile from "./CV/joaleitola_cv.pdf";
 
 const App = () => {
     // ABOUT ME CONTAINER
@@ -90,28 +88,35 @@ const App = () => {
                         <p className="ap">You can find me on</p>
                         <div className="socials">
                             <div className="scont">
-                                <img className="smallimg" src={github} />
+                                <img className="smallimg" src={github} alt="github"/>
                                 <a
                                     className="sp"
                                     href="https://github.com/JJooaa"
                                     target="_blank"
+                                    rel="noreferrer"
                                 >
                                     Github
                                 </a>
                             </div>
                             <div className="scont">
-                                <img className="smallimg" src={linkedin} />
+                                <img className="smallimg" src={linkedin} alt="linkedin"/>
                                 <a
                                     className="sp"
                                     href="https://www.linkedin.com/in/joa-leitola-478515212/"
                                     target="_blank"
+                                    rel="noreferrer"
                                 >
                                     LinkedIn
                                 </a>
                             </div>
                             <div className="scont">
-                                <img className="smallimg" src={cv} />
-                                <a className="sp" href={cvFile} target="_blank">
+                                <img className="smallimg" src={cv} alt="cv"/>
+                                <a
+                                    className="sp"
+                                    href={cvFile}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
                                     CV
                                 </a>
                             </div>
@@ -157,35 +162,41 @@ const App = () => {
                     <div className="skills-container">
                         <div className="skills-flex">
                             <div className="skill-item">
-                                <img className="item-img" src={reactimg} />
+                                <img className="item-img" src={reactimg} alt="react"/>
                                 <p className="item-name">React</p>
                                 <p className="item-p">
-                                    I have a solid understanding of the main
-                                    and advanced concepts in React.
-                                    This knowledge allows me to learn new technologies and libraries with more ease helping me create more diverse websites.
-                                    
+                                    I have a solid understanding of the main and
+                                    advanced concepts in React. This knowledge
+                                    allows me to learn new technologies and
+                                    libraries with more ease helping me create
+                                    more diverse websites.
                                 </p>
                             </div>
                             <div className="skill-item">
-                                <img className="item-img" src={jsimg} />
+                                <img className="item-img" src={jsimg} alt="javascript"/>
                                 <p className="item-name">Javascript (ES6)</p>
                                 <p className="item-p">
-                                    I know the syntax of JavaScript. Also ES6 allows me to write cleaner code. 
+                                    I know the syntax of JavaScript. Also ES6
+                                    allows me to write cleaner code.
                                 </p>
                             </div>
                             <div className="skill-item">
-                                <img className="item-img" src={htmlimg} />
+                                <img className="item-img" src={htmlimg} alt="html"/>
                                 <p className="item-name">HTML</p>
                                 <p className="item-p">
-                                    Creating and structuring HTML is essential for writing good code. Thats why I put alot of thought into it. 
+                                    Creating and structuring HTML is essential
+                                    for writing good code. Thats why I put alot
+                                    of thought into it.
                                 </p>
                             </div>
                             <div className="skill-item">
-                                <img className="item-img" src={cssimg} />
+                                <img className="item-img" src={cssimg} alt="css"/>
                                 <p className="item-name">CSS</p>
                                 <p className="item-p">
-                                    I feel comfortable with CSS to the point that it gives me the ability to form websites more efficiently.
-                                    Paying attention to page details and making it flow smoothly. 
+                                    I feel comfortable with CSS to the point
+                                    that it gives me the ability to form
+                                    websites more efficiently. Paying attention
+                                    to page details and making it flow smoothly.
                                 </p>
                             </div>
                         </div>
@@ -249,6 +260,7 @@ const App = () => {
                                     className="project-a"
                                     target="_blank"
                                     href="https://github.com/JJooaa/digitalents-ajanvaraus"
+                                    rel="noreferrer"
                                 >
                                     Source Code
                                 </a>
@@ -256,6 +268,7 @@ const App = () => {
                                     className="project-a"
                                     target="_blank"
                                     href="https://agitated-jepsen-62689e.netlify.app/"
+                                    rel="noreferrer"
                                 >
                                     Website
                                 </a>
@@ -289,6 +302,7 @@ const App = () => {
                                     className="project-a"
                                     target="_blank"
                                     href="https://github.com/JJooaa/digitalents-ajanvaraus"
+                                    rel="noreferrer"
                                 >
                                     Source Code
                                 </a>
@@ -296,6 +310,7 @@ const App = () => {
                                     className="project-a"
                                     target="_blank"
                                     href="https://www.w3schools.com/tags/tag_a.asp"
+                                    rel="noreferrer"
                                 >
                                     Website
                                 </a>
