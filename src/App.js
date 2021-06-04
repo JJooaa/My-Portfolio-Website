@@ -14,7 +14,8 @@ const App = () => {
     // ABOUT ME CONTAINER
     const [aboutme, inView1] = useInView({
         triggerOnce: true,
-        rootMargin: "-350px 0px",
+        threshold: 0.70
+        //rootMargin: "-350px 0px",
     });
 
     // SKILLS CONTAINER
