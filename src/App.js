@@ -21,7 +21,7 @@ const App = () => {
     // SKILLS CONTAINER
     const [skills, inView2] = useInView({
         triggerOnce: true,
-        rootMargin: "-300px 0px",
+        rootMargin: "-200px 0px",
     });
 
     // OTHER TECH CONTAINER
@@ -39,7 +39,7 @@ const App = () => {
     // PROJECT 1
     const [projects1, inView5] = useInView({
         triggerOnce: true,
-        rootMargin: "-275px 0px",
+        rootMargin: "-200px 0px",
     });
 
     //PROJECT 2
