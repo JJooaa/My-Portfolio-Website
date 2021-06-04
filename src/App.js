@@ -269,7 +269,7 @@ const App = () => {
                                 <a
                                     className="project-a"
                                     target="_blank"
-                                    href="https://agitated-jepsen-62689e.netlify.app/"
+                                    href="https://relaxed-goldstine-747ffb.netlify.app/"
                                     rel="noreferrer"
                                 >
                                     Website
