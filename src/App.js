@@ -177,7 +177,7 @@ const App = () => {
                                 <img className="item-img" src={jsimg} alt="javascript"/>
                                 <p className="item-name">Javascript (ES6)</p>
                                 <p className="item-p">
-                                    I know the syntax of JavaScript. Also ES6
+                                    I know the syntax of JavaScript and I am pretty comfortable with it. Also ES6
                                     allows me to write cleaner code. I'm continuously improving 
                                     my understanding of the language. 
                                 </p>

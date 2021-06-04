@@ -461,11 +461,14 @@ a {
 
 @media only screen and (max-width: 400px) {
     .loader {
-        width: 300px;
+        width: 0px;
     }
     @keyframes writeText {
+        0% {
+            width: 0px;
+        }
         100% {
-            width: 300px;
+            width: 270px;
         }
     }
     .bigh1 {
