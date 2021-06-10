@@ -8,7 +8,7 @@ import { useInView } from "react-intersection-observer";
 import github from "./images/Github.png";
 import linkedin from "./images/linkedin.png";
 import cv from "./images/cv.png";
-import cvFile from "./CV/joaleitola_cv.pdf";
+import cvFile from "./CV/JLformatted_cv.pdf";
 
 const App = () => {
     // ABOUT ME CONTAINER
