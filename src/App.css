@@ -431,16 +431,6 @@ a {
     box-shadow: 0 8px 20px 0 rgba(70, 71, 78, 0.37);
 }
 
-.project1-image::before {
-    content: "";
-    background-color: rgba(0, 0, 0, 0.2);
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-}
-
 .project2-image {
     width: 500px;
     height: 400px;
