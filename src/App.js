@@ -14,7 +14,7 @@ const App = () => {
     // ABOUT ME CONTAINER
     const [aboutme, inView1] = useInView({
         triggerOnce: true,
-        threshold: 0.70
+        threshold: 0.7,
         //rootMargin: "-350px 0px",
     });
 
@@ -44,6 +44,11 @@ const App = () => {
 
     //PROJECT 2
     const [projects2, inView6] = useInView({
+        triggerOnce: true,
+        rootMargin: "-125px 0px",
+    });
+
+    const [projects3, inView9] = useInView({
         triggerOnce: true,
         rootMargin: "-125px 0px",
     });
@@ -89,7 +94,11 @@ const App = () => {
                         <p className="ap">You can find me on</p>
                         <div className="socials">
                             <div className="scont">
-                                <img className="smallimg" src={github} alt="github"/>
+                                <img
+                                    className="smallimg"
+                                    src={github}
+                                    alt="github"
+                                />
                                 <a
                                     className="sp"
                                     href="https://github.com/JJooaa"
@@ -100,7 +109,11 @@ const App = () => {
                                 </a>
                             </div>
                             <div className="scont">
-                                <img className="smallimg" src={linkedin} alt="linkedin"/>
+                                <img
+                                    className="smallimg"
+                                    src={linkedin}
+                                    alt="linkedin"
+                                />
                                 <a
                                     className="sp"
                                     href="https://www.linkedin.com/in/joa-leitola-478515212/"
@@ -111,7 +124,7 @@ const App = () => {
                                 </a>
                             </div>
                             <div className="scont">
-                                <img className="smallimg" src={cv} alt="cv"/>
+                                <img className="smallimg" src={cv} alt="cv" />
                                 <a
                                     className="sp"
                                     href={cvFile}
@@ -163,7 +176,11 @@ const App = () => {
                     <div className="skills-container">
                         <div className="skills-flex">
                             <div className="skill-item">
-                                <img className="item-img" src={reactimg} alt="react"/>
+                                <img
+                                    className="item-img"
+                                    src={reactimg}
+                                    alt="react"
+                                />
                                 <p className="item-name">React</p>
                                 <p className="item-p">
                                     I have a solid understanding of the main and
@@ -174,16 +191,25 @@ const App = () => {
                                 </p>
                             </div>
                             <div className="skill-item">
-                                <img className="item-img" src={jsimg} alt="javascript"/>
+                                <img
+                                    className="item-img"
+                                    src={jsimg}
+                                    alt="javascript"
+                                />
                                 <p className="item-name">Javascript (ES6)</p>
                                 <p className="item-p">
-                                    I know the syntax of JavaScript and I am pretty comfortable with it. Also ES6
-                                    allows me to write cleaner code. I'm continuously improving 
-                                    my understanding of the language. 
+                                    I know the syntax of JavaScript and I am
+                                    pretty comfortable with it. Also ES6 allows
+                                    me to write cleaner code. I'm continuously
+                                    improving my understanding of the language.
                                 </p>
                             </div>
                             <div className="skill-item">
-                                <img className="item-img" src={htmlimg} alt="html"/>
+                                <img
+                                    className="item-img"
+                                    src={htmlimg}
+                                    alt="html"
+                                />
                                 <p className="item-name">HTML</p>
                                 <p className="item-p">
                                     Creating and structuring HTML is essential
@@ -192,7 +218,11 @@ const App = () => {
                                 </p>
                             </div>
                             <div className="skill-item">
-                                <img className="item-img" src={cssimg} alt="css"/>
+                                <img
+                                    className="item-img"
+                                    src={cssimg}
+                                    alt="css"
+                                />
                                 <p className="item-name">CSS</p>
                                 <p className="item-p">
                                     I feel comfortable with CSS to the point
@@ -319,6 +349,47 @@ const App = () => {
                             </div>
                         </div>
                         <div className="project2-image"></div>
+                    </div>
+                    <div
+                        className="project fade-in"
+                        ref={projects3}
+                        style={{ opacity: inView9 ? 1 : 0 }}
+                    >
+                        <div className="project-content">
+                            <p className="project-p">
+                                Project <span>Easybank Landing Page</span> for
+                                practicing layout skills.
+                            </p>
+                            <p className="project-subtext">
+                                Landing page with a beautiful design. Intended
+                                to not have any functionality. Challenge from
+                                frontendmentor.io Designed for 1440px desktop
+                                and 375px for mobile.
+                                <br /> Desktop and mobile friendly.
+                            </p>
+                            <p className="project-subtext smaller">
+                                React, Netlify, Frontend Mentor.
+                            </p>
+                            <div className="project-links">
+                                <a
+                                    className="project-a"
+                                    target="_blank"
+                                    href="https://github.com/JJooaa/easybanklandingpage"
+                                    rel="noreferrer"
+                                >
+                                    Source Code
+                                </a>
+                                <a
+                                    className="project-a"
+                                    target="_blank"
+                                    href="https://keen-knuth-ccbec0.netlify.app/"
+                                    rel="noreferrer"
+                                >
+                                    Website
+                                </a>
+                            </div>
+                        </div>
+                        <div className="project3-image"></div>
                     </div>
                 </div>
             </section>
