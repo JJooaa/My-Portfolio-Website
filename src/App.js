@@ -251,7 +251,6 @@ const App = () => {
                             <p className="moretech-p">Scrum</p>
                             <p className="moretech-p">Netlify</p>
                             <p className="moretech-p">Heroku</p>
-                            <p className="moretech-p">React-Query</p>
                         </div>
                     </div>
                 </div>
